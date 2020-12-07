@@ -21,6 +21,9 @@
       
  # The DAPP
 Every time you use Blockchain to store anything, you have to pay a gas fee. Hence, to reduce the cost paid in gas fee it is assumed that the institution will use a separate database to store the information of students in different classes. Here, we have used a hard coded Database as JSON objects for the same.
+
+        A separate contract is written as well "BLC.sol" where the functionality of adding a class, student and then marking and saving their attendance is also implemented which can be used on Remix IDE but a separate front end is not designed for that contract (cuz money issues). 
+
 * The teacher will be able to mark the attendance on the Blockchain of students present in the database.
 
 ![](images/Mark_Attendance.jpeg)
