@@ -18,6 +18,8 @@
  * `cd blockchain-attendance-system` # move into project folder
  * `npm i` #to install all dependencies for development
  
+ > 🙏 These commands may take a while, please be patient.
+ 
  # Terminal commands to launch the system
  * Run a truffle develop instance
     * `truffle develop` #starts a local development blockchain
