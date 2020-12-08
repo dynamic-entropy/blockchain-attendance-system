@@ -44,3 +44,29 @@ Every time you use Blockchain to store anything, you have to pay a gas fee. Henc
 * Both teacher and student will be able to see the attendance which was stored on blockchain before.
 
 ![](images/View_Attendance.jpeg)
+
+
+# BLC.sol
+This system can directly be used on the Remix. The DB is dynamic and is stored on the Blockchain itself. The teacher can create a class, add students to already created class, mark their presence and retrieve the attendance as well (class wise as well as specific student wise)
+
+Structures used
+
+    Student structure : Contains id, name and presence of each student
+    Attendance List structure: Contains id and presence on that day
+
+Mappings used and their functionality
+
+    ClassRollMap : Class -> Max Students #Keeps a track of total students in that class
+    School : Class -> Student_id -> Student_info #The database which can be stored on the Blockchain containing info of all students
+    allRecord : Class -> Date -> Student info array with presence #Maintains the attendance record of each class separately.
+    studentRecord : Class -> Student_id -> AttendanceList array #Maintains the attendance record of each student separately.
+        
+Functions
+
+    createClass : Create a new class.
+    addStudent : Inputs the class name and add student to that class.
+    MarkPresent : Inputs classs name and student_id to mark the presence of the given student.
+    MarkAbsent : Inputs classs name and student_id to mark the absence of the given student.
+    getRecord : Get the whole  record of a class after inputting class and date.
+    getStudentRecord : Get the whole previous record of a student's attendance after inputting class and student_id.
+    Percentage : Input the class and student_id, this function can calculate the percentage of classes attended by that student.
