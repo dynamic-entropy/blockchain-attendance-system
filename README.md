@@ -20,11 +20,11 @@
  
  # Terminal commands to launch the system
  * Run a truffle develop instance
-    `truffle develop` #starts a local development blockchain
+    * `truffle develop` #starts a local development blockchain
  * In the truffle develop console type 
-    >`migrate --reset` //to run migrations to deploy the contracts
- * (Optionally) run a test to see if gananche instance is succesfully running
-    >`test`
+    * `migrate --reset` #to run migrations to deploy the contracts
+ * (Optionally) run a test 
+    * `test` #check if contract were deployed successfully
   * In a seperate instance/tab of terminal
     * `cd client-app` (move into client app, this was bootstrapped with create-react-app)
     * `npm start` (to start the client-app in development mode)
